@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "checkJs": true, // Enable type checking for JavaScript files
+        "target": "ES6", // Specify ECMAScript target version
+        "module": "commonjs", // Specify module code generation
+        "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+        "baseUrl": ".", // Base directory for resolving non-relative module names
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        }
+    },
+    "include": [
+        "./**/*.js"
+    ] // Include all JavaScript files in the project
+}
