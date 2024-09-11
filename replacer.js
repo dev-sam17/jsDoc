@@ -37,3 +37,17 @@ const readScript = async () => {
 
 readScript();
 
+const source = 'example.npmrc';
+const destination = '.npmrc';
+
+async function copyFile() {
+  try {
+    await fs.copyFile(source, destination);
+    console.log('File copied successfully.');
+  } catch (err) {
+    console.error('Error copying file:', err);
+  }
+}
+
+copyFile();
+
