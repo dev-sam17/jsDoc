@@ -16,11 +16,14 @@ const readScript = async () => {
 
             return '// ' + line;
         } else if (line.includes('configFilePath')) {
+            const thisLine = line.includes(',') ? line : (line + ',');
+            
             if (lines[i + 1].includes('logPath')) {
-
-                return line;
+                return thisLine;
             }
-            return line + '\n' + "\t\tlogPath: './logs'"
+
+
+            return thisLine + '\n' + "\t\tlogPath: './logs'"
         }
 
         return line
