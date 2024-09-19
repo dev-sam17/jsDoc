@@ -8,12 +8,12 @@ mv npmrc .npmrc
 
 npm i
 
-cd node_modules/@reconvert/micoservice-clients/
+cd node_modules/@reconvert/microservice-clients/
 rm -rf *
 rm -rf .*
 
 
-git clone "" .
+git clone https://gitlab.com/reconvert/lib/microservice-clients.git .
 git checkout ${1:-development}
 
 cd ../../..
