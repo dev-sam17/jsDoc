@@ -1,7 +1,7 @@
 mkdir grpc_test
 cd grpc_test
 
-curl -Ss "https://raw.githubusercontent.com/dev-sam17/jsDoc/main/tester.zip" > "tester.zip"
+git clone https://gitlab.com/sachin167/grpc_test.git
 
 unzip tester.zip
 
