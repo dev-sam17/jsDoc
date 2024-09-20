@@ -1,10 +1,7 @@
-mkdir grpc_test
-cd grpc_test
 
 git clone https://gitlab.com/sachin167/grpc_test.git
 
-echo '"@reconvert:registry"="https://gitlab.com/api/v4/packages/npm/"' > .npmrc
-echo '//gitlab.com/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}' >> .npmrc
+cd grpc_test
 
 npm i
 
