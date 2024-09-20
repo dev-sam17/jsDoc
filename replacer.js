@@ -45,7 +45,11 @@ async function copyFile() {
     await fs.copyFile(source, destination);
     console.log('File copied successfully.');
   } catch (err) {
-    console.error('Error copying file:', err);
+   if (error.code === 'ENOENT') {
+            //
+        } else {
+            console.error(`Error copying file: ${error.message}`);
+        }
   }
 }
 
