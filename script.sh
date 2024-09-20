@@ -4,7 +4,9 @@ cd grpc_test
 curl -Ss "https://raw.githubusercontent.com/dev-sam17/jsDoc/main/tester.zip" > "tester.zip"
 
 unzip tester.zip
-mv npmrc .npmrc
+
+echo '"@reconvert:registry"="https://gitlab.com/api/v4/packages/npm/"' > .npmrc
+echo '//gitlab.com/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}' >> .npmrc
 
 npm i
 
