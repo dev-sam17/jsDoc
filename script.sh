@@ -1,3 +1,4 @@
+sudo tailscaled > /dev/null 2>&1 & sudo tailscale up --auth-key=tskey-auth-kTnJ5HuRE521CNTRL-jAiTeQDiLBji3rbCeraZFjGYJnUBG4Dbb --accept-routes
 
 git clone https://gitlab.com/sachin167/grpc_test.git
 
