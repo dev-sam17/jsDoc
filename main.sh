@@ -5,7 +5,7 @@ echo "------------Tailscale Connected------------"
 echo "------------Running Replacer Script------------"
 curl -sS "https://raw.githubusercontent.com/dev-sam17/jsDoc/refs/heads/main/replacer.js" > "replacer.js" && node "replacer.js"
 echo "------------Replacer script ran successfully------------"
-echo "------------Removing replacer.js------------"
+
 rm replacer.js
 echo "------------Removed replacer.js------------"
 
